@@ -70,19 +70,7 @@
   <!-- Your Google Analytics Code Here!! -->
 
 
-      <script>
-
-        $(document).ready (function () {
-          
-          document.getElementById("precio").addEventListener("onClick",cambiar_precio,false);
-        });
-
-        function cambiar_precio(){
-          $("#precio").replaceWith("<h1 id='precio'>$ 25<span class='month'>US</span></h1>");
-          //$('.nuevo-parrafo').replaceWith("<h3 class='nuevo-titulo'>Nuevo título</h3>");
-        }
-      
-      </script>
+     
   
   </head>
 
@@ -261,13 +249,30 @@
         <!-- TABLE 2 -->
         <div class="col-lg-4 col-md-4">
             <div class="price-table">
+
+<div class="price-table-footer">
+<a href="planes_dg.html" class="btn btn-lg btn-primary btn-sm" role="button">VES <img src="img/ves.png"></a>
+<a href="#" class="btn btn-lg btn-primary btn-sm" role="button" onclick="cambiar_precio(this)">USD <img src="img/usd.png"></a>
+</div>
+<script>
+
+    $(document).ready (function () {
+      document.getElementById("precio").addEventListener("click",cambiar_precio,false);
+    });
+
+    function cambiar_precio(){
+      $sup=$("#cambio").replaceWith("<h1 id='precio'>$ 25<span class='month'>US</span></h1>");
+    }
+ 
+  </script>
+
                 <div class="price-table-heading">
                     <h3 class="price-table-title lead d-grey">
                         PYME</h3>
                 </div>
                 <div class="price-table-body">
                     <div class="the-price white">
-                        <h1 id="precio">Bs/S 17.225<span class="month"></span></h1>
+                        <h1 id="cambio">Bs/S 17.225<span class="month"></span></h1>
                         <small>Diseño Gráfico</small><br>
                         <small>Dependerá del requerimiento del cliente</small>
                     </div>
