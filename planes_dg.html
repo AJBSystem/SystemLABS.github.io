@@ -5,7 +5,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Servicios Marketing Digital</title>
+    <title>Servicios Diseño Gráfico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ThreeSixty Bootstrap Template">
     <meta name="author" content="Fabian Bentz Webdesign">
@@ -69,6 +69,20 @@
   
   <!-- Your Google Analytics Code Here!! -->
 
+
+      <script>
+
+        $(document).ready (function () {
+          
+          document.getElementById("precio").addEventListener("onClick",cambiar_precio,false);
+        });
+
+        function cambiar_precio(){
+          $("#precio").replaceWith("<h1 id='precio'>$ 25<span class='month'>US</span></h1>");
+          //$('.nuevo-parrafo').replaceWith("<h3 class='nuevo-titulo'>Nuevo título</h3>");
+        }
+      
+      </script>
   
   </head>
 
@@ -253,8 +267,7 @@
                 </div>
                 <div class="price-table-body">
                     <div class="the-price white">
-                        <h1>
-                            $25<span class="month"> us </span></h1>
+                        <h1 id="precio">Bs/S 17.225<span class="month"></span></h1>
                         <small>Diseño Gráfico</small><br>
                         <small>Dependerá del requerimiento del cliente</small>
                     </div>
