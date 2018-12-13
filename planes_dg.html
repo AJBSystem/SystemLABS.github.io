@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<!-- ThreeSixty Creativity Website Template -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Servicios Diseño Gráfico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ThreeSixty Bootstrap Template">
+    <meta name="author" content="Fabian Bentz Webdesign">
+
+<!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+    
+    <!-- CSS Styles -->
+    <!-- custom css -->
+   <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- standart theme css -->
+<!--     <link rel="stylesheet" id="theme" href="./css/theme1.css" type="text/css" />
+ -->    <link rel="stylesheet" id="theme" href="css/theme1.css" type="text/css" />
+
+    
+    <!-- Font Awesome Icons css -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    
+    <!-- BxSlider and Sequence Slider css -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="./css/sequence-slider.css" />
+    
+    <!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="./css/magnific-popup.css"> 
+    
+    <!-- Color Switch Panel css -->
+    <link rel="stylesheet" href="./css/color.switch.css" type="text/css" />
+    
+    <!-- Back to Top Button css -->
+    <link rel="stylesheet" href="./css/top.css" type="text/css" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
+  
+  
+  <!-- Your Google Analytics Code Here!! -->
+
+
+      <script>
+
+        $(document).ready (function () {
+          
+          document.getElementById("precio").addEventListener("click",cambiar_precio,false);
+        });
+
+        function cambiar_precio(){
+          $("#precio").replaceWith("<h1 id='precio'>$ 25<span class='month'>US</span></h1>");
+        }
+      
+      </script>
+  
+  </head>
+
+<body>
+
+<!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="index.html" class="scrollto"><img src="img/logoFinalBlanco.png" style= width="40" height="40"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#intro"><img src="#" alt="" title="Logo ppal" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Inicio</a></li>
+          <!-- <li><a href="index.html">Nosotros</a></li> -->
+          <!-- <li><a href="#price">Servicios</a></li> -->
+          <li class="menu-has-children"><a href="#price">Servicios</a>
+            <ul>
+              <li><a href="planes.html">Diseño de Páginas Web</a></li>
+              <li><a href="planes_ds.html">Desarrollo de Sistemas</a></li>
+              <li><a href="planes_marketing.html">Marketing Digital</a></li>
+              <li><a href="planes_pub.html">Publicidad Online</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="index.html">Portfolio</a></li> -->
+          <!-- <li><a href="index.html">Equipo</a></li> -->
+          <li><a href="#footer">Contacto</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+ <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Somos Profesionales</h2>
+                <p>Diseño de paginas web profesionales de alta calidad, totalmente personalizadas, optimizadas para google con multiples funcionalidades y fáciles de administrar</p>
+                <a href="#price" class="btn-get-started scrollto">Comienza</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Posiciona tu página en los buscadores</h2>
+                <p>Somos expertos en posicionamiento web en google y la optimización de sitios web, mejoramos la estructura de su contenido utilizando herramientas especializadas para identificar los factores apropiados logrando el posicionamiento de su sitio web.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Comienza</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>¿Por qué una Página Web?</h2>
+                <p>El 80% de las personas buscan en internet para descubrir nuevos lugares y conocer alternativas de negocio que no sabian que existían.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Comienza</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>América Latina</h2>
+                <p>Si esta en continente americano, nuestra zona horaria, es muy similar, Adicionalmente a este proceso contaremos con un Project Manager que apoyará la comunicación entre nosotros.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Comienza</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/5.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Dispositivos Móviles</h2>
+                <p>Hoy más que nunca las personas se conectan a través de dispositivos móviles. Nuestros diseños de paginas web se adaptan automaticamente a computadores, tablets y smartphones</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Comienza</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+<!-- PRICE -->
+
+<div id="price">
+
+  <div class="container">
+    <div class="row">
+    
+     <div class="center-block head tables">
+     
+      <div class="col-lg-12 col-md-12 col-xs-12 " >
+    
+       <h1>Plan Único para Diseño Gráfico de su Marca</h1>
+       <hr class="head-border-grey">
+        <p class="d-grey center">Para la mayoría de personas, su idea de diseño gráfico no va más allá del diseño de logos y piensan que solo necesitarán los servicios de un diseñador gráfico para crear el logotipo de su empresa. Lo cierto es que se debe pensar más en crear una identidad corporativa, por eso venga con nosotros se sorprenderá !</p>
+       
+      </div>
+    
+       
+    </div>
+
+      
+      <!-- PRICE TABLES -->
+        <div class="col-lg-4 col-md-4">
+            <!-- <div class="price-table">
+                <div class="price-table-heading">
+                    <h3 class="price-table-title lead d-grey">PROFESIONAL</h3>
+                </div>
+                <div class="price-table-body">
+                    <div class="the-price white">
+                        <h1>
+                            $310<span class="month">/us</span></h1>
+                        <small>Plan individual diseño para profesionales</small>
+                    </div>
+                    <table class="table">
+                      <tr class="active"><td class="white">Slider de Imágenes</td></tr>
+                      <tr><td class="blue">Alta en Buscadores</td></tr>
+                      <tr class="active"><td class="white">Galería de Imágenes</td></tr>
+                      <tr><td class="blue">Sitio Web Prediseñado</td></tr>
+                      <tr class="active"><td class="white">Links a Redes Sociales</td></tr>
+                      <tr><td class="blue">Formulario de Contacto</td></tr>
+                      <tr class="active"><td class="white">Cantidad de Páginas (05)</td></tr>
+                      <tr><td class="blue">Administración de Contenido</td></tr>
+                      <tr class="active"><td class="white">Diseño Responsive<br> (Para Smartphones y Tablets)</td></tr>
+                      <tr><td class="blue"></td></tr>
+                    </table>
+                </div>
+                <div class="price-table-footer">
+                   <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a>
+                </div>
+            </div> -->
+        </div>
+        
+        <!-- TABLE 2 -->
+        <div class="col-lg-4 col-md-4">
+            <div class="price-table">
+                <div class="price-table-heading">
+                    <h3 class="price-table-title lead d-grey">
+                        PYME</h3>
+                </div>
+                <div class="price-table-body">
+                    <div class="the-price white">
+                        <h1 id="precio">Bs/S 17.225<span class="month"></span></h1>
+                        <small>Diseño Gráfico</small><br>
+                        <small>Dependerá del requerimiento del cliente</small>
+                    </div>
+                    <table class="table">
+                      <tr class="active"><td class="white">Boletínes Electrónicos</td></tr>
+                      <tr><td class="blue">Flyers</td></tr>
+                      <tr class="active"><td class="white">Identidad Corporativa</td></tr>
+                      <tr class="active"><td class="blue">Diseño de Packaging</td></tr>
+                      <tr><td class="white">Web Banners</td></tr>
+                      <tr class="active"><td class="blue">Señalética</td></tr>
+                      <tr><td class="white">Ilustración Digital</td></tr>
+                      <tr class="active"><td class="blue">Facturas</td></tr>
+                      <tr><td class="white">Formularios</td></tr>
+                      <tr class="active"><td class="blue">Enlace patrocinado</td></tr>
+                      <tr><td class="white">Folletos</td></tr>
+                      
+                    </table>
+                </div>
+                <!-- <div class="price-table-footer">
+                   <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- TABLE 3 -->
+         <div class="col-lg-4 col-md-4">
+           <!-- <div class="price-table table-feature">
+                <div class="price-table-heading">
+                    <h3 class="price-table-title lead d-grey">
+                        PREMIUM</h3>
+                </div>
+                <div class="price-table-body">
+                    <div class="the-price white">
+                        <h1>
+                            $500<span class="month">/us</span></h1>
+                        <small>Diseño de alto nivel empresas grandes</small>
+                    </div>
+                    <table class="table">
+                      <tr class="active"><td class="white">Mapa del Sitio </td></tr>
+                      <tr><td class="blue">Galería de Imágenes</td></tr>
+                      <tr class="active"><td class="white">Integración Google Maps</td></tr>
+                      <tr><td class="blue">Autogestión de Contenido</td></tr>
+                      <tr class="active"><td class="white">Configuración Google Email </td></tr>
+                      <tr><td class="blue">Blog de Noticias o Eventos </td></tr>
+                      <tr class="active"><td class="white">Integración Google Analytics </td></tr>
+                      <tr><td class="blue">Integración a Redes Sociales</td></tr>
+                      <tr class="active"><td class="white">Diseño Inteligente E-Marketing</td></tr>
+                      <tr><td class="blue">Slider de Imágenes y Contenido</td></tr>
+                      <tr class="active"><td class="white">Posicionamiento SEO Basico Plus</td></tr>
+                      <tr><td class="blue">03 Propuestas Gráficas de Diseño</td></tr>
+                      <tr class="active"><td class="white">Portafolio de Productos o Servicios</td></tr>
+                      <tr><td class="blue">Integración Google Analytics</td></tr>
+                      <tr class="active"><td class="white">Configuración Google Email </td></tr>
+                      <tr><td class="blue">Cantidad de Páginas definidas <br> por el Cliente</td></tr>
+                      <tr class="active"><td class="white">Diseño Responsive <br> (Para Smartphones y Tablets)</td></tr>
+                      <tr><td class="blue"></td></tr>
+                    </table>
+                </div>
+                <div class="price-table-footer">
+                   <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a>
+                </div>
+            </div>-->
+        </div> 
+        
+       
+  </div>
+ </div>
+</div>
+
+<!-- PRICE END -->
+
+ <!--==========================
+    Footer
+  ============================-->
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h4>Nuestros Clientes</h4>
+            <p align="justify">Los clientes para nosotros son como el agua para un ser humano, algo tan necesario, que sin ese elemento no tendriamos razón de ser, es por este motivo que garantizamos un servicio de calidad para su entera satisfacción.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Teléfonos</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">+58 0414-112-44-90</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">+58 0416-302-53-46</a></li>
+             <!--  <li><i class="ion-ios-arrow-right"></i> <a href="#">Servicios</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terminos de Servicios</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Politicas de Privacidad</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Siguenos</h4> 
+           <!--  <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +58 0414-112-44-90<br>
+              <strong>Email:</strong> paginaswebalrescate@gmail.com<br>
+            </p> -->
+
+            <div class="social-links">
+              <a href="https://twitter.com/SYSTEMLABS10" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/SYSTEMLABS10" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/systemlabs10/?hl=es-la" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCL-yP7T-cQbrPOSewHOovpQ" class="google-plus"><i class="fa fa-youtube"></i></a>
+              <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> --> 
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Gracias por Confiar</h4>
+            <p align="justify">Gracias por confiar en nuestra capacidad para brindarle servicios. SystemLABS se enorgullece por tener la oportunidad de brindarle apoyo en su vida empresarial y esperamos una relación continua que sea rentable para todos.</p>
+            <!-- <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribase">
+            </form> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>SystemLABS</strong>. All Rights Reserved
+      </div>
+      <div class="credits"> 
+        
+         <!--  All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage -->
+       
+         <!-- Diseñado por: <a href="https://bootstrapmade.com/">Ing. Arnaldo J. Bonillo B.</a> -->
+         <a href="https://bootstrapmade.com/">Caracas-Venezuela </a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> 
+
+
+
+<!-- JAVASCRIPT
+================================================== -->
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<!-- CUSTOM JAVASCRIPT -->
+<!-- Custom Functions -->
+<script type="text/javascript" src="./js/functions.js"></script> 
+
+<!-- Portfolio with mixitup filter and prettyphoto -->
+<script type="text/javascript" src="./js/jquery.mixitup.min.js"></script> 
+<!-- Magnific Popup core JS file -->
+<script type="text/javascript" src="./js/magnific.js"></script>
+
+<!-- BxSlider -->
+<script type="text/javascript" src="./js/jquery.bxslider.min.js"></script>
+
+<!-- Sequence Slider -->
+<script type="text/javascript" src="./js/jquery.sequence-min.js"></script>
+
+<!-- Parallax Background -->
+<script type="text/javascript" src="./js/nbw-parallax.js"></script>
+<script type="text/javascript" src="./js/jquery.inview.js"></script>
+
+<!-- Smooth Scrolling -->
+<script type="text/javascript" src="./js/smoothscroll.js"></script>
+
+<!-- Sticky Navigation --> 
+<script type="text/javascript" src="./js/jquery.sticky.js"></script>
+
+<!-- Style Switcher --> 
+<script type="text/javascript" src="./js/jquery.style-switcher.js"></script>
+
+<!-- Clients Slider -->
+<script type="text/javascript" src="./js/jquery.flexisel.js"></script>
+
+<!-- Retina JS -->
+<script type="text/javascript" src="./js/retina-1.1.0.min.js"></script>
+
+
+ <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
