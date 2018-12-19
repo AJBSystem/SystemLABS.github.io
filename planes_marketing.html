@@ -242,7 +242,17 @@
                 </div>
             </div> -->
         </div>
+        <script>
+
+            $(document).ready (function () {
+              document.getElementById("precio").addEventListener("click",cambiar_precio,false);
+            });
         
+            function cambiar_precio(){
+              $sup=$("#cambio").replaceWith("<h1 id='precio'>$ 25<span class='month'>US</span></h1>");
+            }
+         
+          </script>
         <!-- TABLE 2 -->
         <div class="col-lg-4 col-md-4">
             <div class="price-table">
@@ -266,10 +276,12 @@
                       
                     </table>
                 </div>
-                <!-- <div class="price-table-footer">
-                   <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a>
+                <div class="price-table-footer">
+                    <a href="planes_dg.html" class="btn btn-lg btn-primary btn-sm" role="button">VES <img src="img/ves.png"></a>
+                    <a href="#" class="btn btn-lg btn-primary btn-sm" role="button" onclick="cambiar_precio(this)">USD <img src="img/usd.png"></a>
+                   <!-- <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a> -->
                 </div>
-            </div> -->
+            </div>
         </div>
 
         <!-- TABLE 3 -->

@@ -93,7 +93,7 @@
           <li class="menu-active"><a href="index.html">Inicio</a></li>
           <!-- <li><a href="index.html">Nosotros</a></li> -->
           <!-- <li><a href="#price">Servicios</a></li> -->
-          <li class="menu-has-children"><a href="#price">Servicios</a>
+          <li class="menu-has-children"><a href="#price">Diseño Gráfico</a>
             <ul>
               <li><a href="planes.html">Diseño de Páginas Web</a></li>
               <li><a href="planes_ds.html">Desarrollo de Sistemas</a></li>
@@ -217,7 +217,7 @@
       
       <!-- PRICE TABLES -->
         <div class="col-lg-4 col-md-4">
-            <!-- <div class="price-table">
+          <!--   <div class="price-table">
                 <div class="price-table-heading">
                     <h3 class="price-table-title lead d-grey">PROFESIONAL</h3>
                 </div>
@@ -243,28 +243,36 @@
                 <div class="price-table-footer">
                    <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a>
                 </div>
-            </div> -->
-        </div>
+            </div>-->
+        </div> 
         
         <!-- TABLE 2 -->
         <div class="col-lg-4 col-md-4">
             <div class="price-table">
 
-<div class="price-table-footer">
-<a href="planes_dg.html" class="btn btn-lg btn-primary btn-sm" role="button">VES <img src="img/ves.png"></a>
-<a href="#" class="btn btn-lg btn-primary btn-sm" role="button" onclick="cambiar_precio(this)">USD <img src="img/usd.png"></a>
-</div>
-<script>
 
-    $(document).ready (function () {
-      document.getElementById("precio").addEventListener("click",cambiar_precio,false);
-    });
+        <script>
+          $(document).ready(function(){
+            document.getElementById("dolar").addEventListener("click",preDol,true);
+            document.getElementById("bolivar").addEventListener("click",preBol,true);
+        });
 
-    function cambiar_precio(){
-      $sup=$("#cambio").replaceWith("<h1 id='precio'>$ 25<span class='month'>US</span></h1>");
-    }
- 
-  </script>
+
+        function preDol(){
+          $dol=$("#precio").replaceWith("<h1>$ 25<span class='month'>US</span></h1>");
+         ///alert("$25 US");
+        }
+
+
+        function preBol(){
+         
+         $("#precio").replaceWith("<h1>Bs/S 17.225<span class='month'></span></h1>");
+
+          //alert("Bs/S 17.225");
+        }
+
+
+        </script>
 
                 <div class="price-table-heading">
                     <h3 class="price-table-title lead d-grey">
@@ -272,7 +280,7 @@
                 </div>
                 <div class="price-table-body">
                     <div class="the-price white">
-                        <h1 id="cambio">Bs/S 17.225<span class="month"></span></h1>
+                        <h1 id="precio">Bs/S 17.225<span class="month"></span></h1>
                         <small>Diseño Gráfico</small><br>
                         <small>Dependerá del requerimiento del cliente</small>
                     </div>
@@ -291,9 +299,18 @@
                       
                     </table>
                 </div>
-                <!-- <div class="price-table-footer">
-                   <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a>
-                </div> -->
+                <div class="price-table-footer">
+                  <div class="price-table-footer">
+        <!-- <a href="#" class="btn btn-lg btn-primary btn-sm" id="dolar" role="button" onclick="cambio(this)">USD <img src="img/usd.png"></a>            
+        <a href="#" class="btn btn-lg btn-primary btn-sm" id="bolivar" role="button" onclick="cambio(this)">VES <img src="img/ves.png"></a> -->
+
+        <button type="button" class="btn btn-lg btn-primary btn-sm" id="dolar" onclick="preDol(this)"><img src="img/usd.png"> USD</a></button>
+        <button type="button" class="btn btn-lg btn-primary btn-sm" id="bolivar"onclick="preBol(this)"><img src="img/ves.png"> VES</a></button>
+
+
+</div>
+                   <!-- <a href="index.html" class="btn btn-lg btn-primary btn-sm" role="button">Registrate</a> -->
+                </div>
             </div>
         </div>
 
