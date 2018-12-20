@@ -249,41 +249,41 @@
         <!-- TABLE 2 -->
         <div class="col-lg-4 col-md-4">
             <div class="price-table">
+                
 
 
         <script>
-          $(document).ready(function(){
-            document.getElementById("dolar").addEventListener("click",preDol,false);
-            document.getElementById("bolivar").addEventListener("click",preBol,fa);
-        });
 
-
-        function preDol(){
-          $dol=$("#precio").replaceWith("<h1>$ 25<span class='month'>US</span></h1>");
-         ///alert("$25 US");
-        }
-
-
-        function preBol(){
-         
-         $("#precio").replaceWith("<h1>Bs/S 17.225<span class='month'></span></h1>");
-
-          //alert("Bs/S 17.225");
-        }
-
-
+          $(document).ready(function() {
+            $("#dolar").click(function () {
+              $("#precio").replaceWith("<h1><small>$</small> 25<span class='month'>US</span></h1>");
+              
+            });
+            $("#bolivar").click(function () {
+              $("#precio2").replaceWith("<h1><small>Bs/S</small> 17.225<span class='month'></span></h1>");
+              
+            });
+            
+          });
+      
         </script>
 
                 <div class="price-table-heading">
-                    <h3 class="price-table-title lead d-grey">
-                        PYME</h3>
+                <h3 class="price-table-title lead d-grey">
+
+                <button type="button" class="btn btn-lg btn-primary btn-sm" id="dolar" onclick="preDol(this)"><img src="img/usd.png"> USD</a></button>
+                <button type="button" class="btn btn-lg btn-primary btn-sm" id="bolivar"onclick="preBol(this)"><img src="img/ves.png"> VES</a></button>
+                </h3>
+               
                 </div>
                 <div class="price-table-body">
                     <div class="the-price white">
-                        <h1 id="precio">Bs/S 17.225<span class="month"></span></h1>
+                        <h1 id="precio"><small>Bs/S</small> 17.225<span class="month"></span></h1>
+                        <h1 id="precio2"><span class="month"></span></h1>
                         <small>Diseño Gráfico</small><br>
                         <small>Dependerá del requerimiento del cliente</small>
                     </div>
+                    
                     <table class="table">
                       <tr class="active"><td class="white">Boletínes Electrónicos</td></tr>
                       <tr><td class="blue">Flyers</td></tr>
@@ -299,18 +299,12 @@
                       
                     </table>
                 </div>
-                <div class="price-table-footer">
-                  <div class="price-table-footer">
-        <!-- <a href="#" class="btn btn-lg btn-primary btn-sm" id="dolar" role="button" onclick="cambio(this)">USD <img src="img/usd.png"></a>            
-        <a href="#" class="btn btn-lg btn-primary btn-sm" id="bolivar" role="button" onclick="cambio(this)">VES <img src="img/ves.png"></a> -->
+                <!-- <div class="price-table-footer">
+                  <div class="price-table-footer"> -->
 
-        <button type="button" class="btn btn-lg btn-primary btn-sm" id="dolar" onclick="preDol(this)"><img src="img/usd.png"> USD</a></button>
-        <button type="button" class="btn btn-lg btn-primary btn-sm" id="bolivar"onclick="preBol(this)"><img src="img/ves.png"> VES</a></button>
-
-
-</div>
+<!-- </div> -->
                    <!-- <a href="index.html" class="btn btn-lg btn-primary btn-sm" role="button">Registrate</a> -->
-                </div>
+                <!-- </div> -->
             </div>
         </div>
 
