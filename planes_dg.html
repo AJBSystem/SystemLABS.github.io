@@ -68,9 +68,16 @@
   
   
   <!-- Your Google Analytics Code Here!! -->
+<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'GA_TRACKING_ID');
+</script>
 
-     
   
   </head>
 
@@ -82,11 +89,14 @@
   <header id="header">
     <div class="container-fluid">
 
-      <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"><img src="img/logoFinalBlanco.png" style= width="40" height="40"></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="#" alt="" title="Logo ppal" /></a> -->
-      </div>
+        <div id="logo" class="pull-left">
+            <h1><a href="#intro" class="scrollto"><img src="img/logo170x20.png"
+                                                  srcset="img/logo255x30.png 480w,
+                                                          img/logo354x42.png"
+                                         style="margin-top: -10px;" /></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#intro"><img src="#" alt="" title="Logo ppal" /></a> -->
+          </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -255,17 +265,18 @@
         <script>
 
           $(document).ready(function() {
-            $("#dolar").click(function () {
-              $("#precio").replaceWith("<h1><small>$</small> 25<span class='month'>US</span></h1>");
-              
-            });
-            $("#bolivar").click(function () {
-              $("#precio2").replaceWith("<h1><small>Bs/S</small> 17.225<span class='month'></span></h1>");
-              
-            });
-            
+             
+            document.getElementById("dolar").addEventListener("click",preDol,false);
           });
-      
+
+
+      function preDol(){
+          $dol=$("#precio").replaceWith("<h1><small>$</small> 25<span class='month'>US</span></h1>");
+      }
+
+      function preBol(){
+           $bol=$("#precio2").replaceWith("<h1><small>Bs/S</small> 17.225<span class='month'></span></h1>");
+         }
         </script>
 
                 <div class="price-table-heading">
@@ -278,7 +289,7 @@
                 </div>
                 <div class="price-table-body">
                     <div class="the-price white">
-                        <h1 id="precio"><small>Bs/S</small> 17.225<span class="month"></span></h1>
+                        <h1 id="precio"><small></small><span class="month"></span></h1>
                         <h1 id="precio2"><span class="month"></span></h1>
                         <small>Diseño Gráfico</small><br>
                         <small>Dependerá del requerimiento del cliente</small>

@@ -80,11 +80,13 @@
   <header id="header">
     <div class="container-fluid">
 
-      <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"><img src="img/logoFinalBlanco.png" style= width="40" height="40"></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="#" alt="" title="Logo ppal" /></a> -->
-      </div>
+        <div id="logo" class="pull-left">
+            <h1><a href="#intro" class="scrollto"><img src="img/logo170x20.png"
+            srcset="img/logo255x30.png 480w, img/logo354x42.png"
+             style="margin-top: -10px;" /></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#intro"><img src="#" alt="" title="Logo ppal" /></a> -->
+          </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -245,12 +247,17 @@
         <script>
 
             $(document).ready (function () {
+              //No le esta parando a esto de abajo le esta parando a los botones porque?
               document.getElementById("precio").addEventListener("click",cambiar_precio,false);
             });
         
-            function cambiar_precio(){
-              $sup=$("#cambio").replaceWith("<h1 id='precio'>$ 25<span class='month'>US</span></h1>");
-            }
+            function preDol(){
+            $dol=$("#precio").replaceWith("<h1><small>$</small> 50<span class='month'>US</span></h1>");
+        }
+  
+        function preBol(){
+             $bol=$("#precio2").replaceWith("<h1><small>Bs/S</small> 34.450<span class='month'></span></h1>");
+           }
          
           </script>
         <!-- TABLE 2 -->
@@ -265,8 +272,8 @@
                 </div>
                 <div class="price-table-body">
                     <div class="the-price white">
-                        <h1>
-                           <small>Bs/s</small>  34.450<span class="month"></span></h1>
+                        <h1 id="precio"><small></small>  <span class="month"></span></h1>
+                        <h1 id="precio2"><small></small> <span class="month"></span></h1>
                         <small>Administración de Redes Sociales</small><br>
                         <small>Dependerá del contenido y la necesidad del cliente</small>
                     </div>
@@ -279,11 +286,9 @@
                       
                     </table>
                 </div>
-                <div class="price-table-footer">
-                    <a href="planes_dg.html" class="btn btn-lg btn-primary btn-sm" role="button">VES <img src="img/ves.png"></a>
-                    <a href="#" class="btn btn-lg btn-primary btn-sm" role="button" onclick="cambiar_precio(this)">USD <img src="img/usd.png"></a>
-                   <!-- <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a> -->
-                </div>
+                 <!--<div class="price-table-footer">
+                   <a href="index.html" class="btn btn-lg btn-primary" role="button">Registrate</a> 
+                </div>-->
             </div>
         </div>
 

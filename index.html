@@ -27,10 +27,26 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+
+
+<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GA_TRACKING_ID');
+</script>
+
+
+
+
+
   <!-- =======================================================
-    Theme Name: SystemLABS
-    Theme URL: https://SystemLABS.net
-    Author: Ing. Arnaldo Bonillo
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
 </head>
@@ -60,9 +76,10 @@
             <ul>
               <li><a href="planes.html">Diseño de Páginas Web</a></li>
               <li><a href="planes_ds.html">Desarrollo de Sistemas</a></li>
-              <li><a href="planes_marketing.html">Marketing Digital</a></li>
+              <li><a href="planes_st.html">Soporte Técnico</a></li>
+              <!-- <li><a href="planes_marketing.html">Marketing Digital</a></li>
               <li><a href="planes_pub.html">Publicidad Online</a></li>
-              <li><a href="planes_dg.html">Diseño Gráfico</a></li>
+              <li><a href="planes_dg.html">Diseño Gráfico</a></li> -->
             </ul>
           </li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -274,6 +291,11 @@
             <p class="description" align="justify">Actualmente, el desarrollo de aplicaciones y sistemas informáticos propios constituyen una de las formas más importantes de optimizar y gestionar los procesos de negocio de una empresa.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-hammer"></i></div>
+            <h4 class="title"><a href="planes_st.html">Soporte Técnico</a></h4>
+            <p class="description" align="justify">El mantenimiento de nuestros equipos es de vital importancia para nuestra empresa por eso debemos tomarnos un tiempo e invertir en la optimización de nuestro hardware y software.</p>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-at"></i></div>
             <h4 class="title"><a href="planes_marketing.html">Marketing Digital</a></h4>
             <p class="description" align="justify">Mantenimiento y gestión de contenido en redes sociales (Tarifa mensual en función a la cantidad de contenido y redes sociales a gestionar). Incluye diseño estandar de publicaciones, banners para portada de Facebook y Twitter respectivamente.</p>
@@ -282,17 +304,17 @@
             <div class="icon"><i class="ion-ios-bookmarks"></i></div>
             <h4 class="title"><a href="planes_pub.html">Publicidad On Line</a></h4>
             <p class="description" align="justify">La publicidad online es la publicidad que se realiza en los medios interactivos: Internet, televisión interactiva y aparatos móviles, a través de formatos interactivos.  </p>
-          </div>
+          </div> -->
           <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-android-cart"></i></div>
             <h4 class="title"><a href="planes_tienda.html">Tienda OnLine</a></h4>
             <p class="description" align="justify">Tener una tienda online es parecido a cualquier negocio, hay que preocuparse de la venta de productos, de atender a los clientes (soporte venta y post-venta), de la logística, el stock, el marketing y la publicidad.</p>
           </div> -->
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-people"></i></div>
             <h4 class="title"><a href="planes_dg.html">Diseño Gráfico</a></h4>
             <p class="description" align="justify">La primera impresión es la que cuenta por eso realizamos el diseño de su publicidad, boletines electrónicos, flyers, publicaciones de productos, propagandas, banners y mucho más.</p>
-          </div>
+          </div> -->
 
         </div>
 
@@ -421,9 +443,10 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/portfolio/SIDIS.png" class="img-fluid" alt="">
-                <a href="img/portfolio/SIDIS.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/SIDIS.png" data-lightbox="portfolio" data-title="Sistema de Inventario" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/SIDIS_detalles.jpg" class="link-details" title="más detalles"><i class="ion ion-android-open"></i></a>
               </figure>
+
 
               <div class="portfolio-info">
                 <h4><a href="#">SIDIS</a></h4>
@@ -432,50 +455,37 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/Screenshot_2018-12-10 Inicio.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/Screenshot_2018-12-10 Inicio.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="www.cicpc.gob.ve">C.I.C.P.C.</a></h4>
-                <p>Cuerpo de Investigaciones Científicas, Penales y Criminalisticas</p>
-              </div>
-            </div>
-          </div>
+         
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/portfolio/SISCOF.png" class="img-fluid" alt="">
-                <a href="img/portfolio/SISCOF.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/SISCOF.png" class="link-preview" data-lightbox="portfolio" data-title="Sistema de Consulta" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/SISCOF_detalles.jpg" class="link-details" title="más detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">SISCOF</a></h4>
-                <p>Sistema de Consulta de Funciones</p>
+                <p>Sistema de Consulta </p>
               </div>
             </div>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/SIMDI_SMART2 copia.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/SIMDI_SMART2 copia.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sistema Monitor de Dispositivos" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/SIMDI_SMART2_detalles.jpg" class="link-details" title="más detalles"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Boletín 2</a></h4>
-                <p>Card</p>
+                <h4><a href="#">SIMDI SMART</a></h4>
+                <p>Sistema Monitor de Dispositivos</p>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
@@ -496,13 +506,28 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/portfolio/siscor.png" class="img-fluid" alt="">
-                <a href="img/portfolio/siscor.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="img/portfolio/siscor.png" class="link-preview" data-lightbox="portfolio" data-title="Sistema de Consulta de Requerimientos" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="img/portfolio/siscor_detalles.jpg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
                 <h4><a href="#">SISCOR</a></h4>
                 <p>Sistema de Control de Requerimientos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/Screenshot_2018-12-10 Inicio.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/Screenshot_2018-12-10 Inicio.jpg" class="link-preview" data-lightbox="portfolio" data-title="C.I.C.P.C." title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="www.cicpc.gov.ve" class="link-details" title="más detalles"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">C.I.C.P.C.</a></h4>
+                <p>Policia Científica</p>
               </div>
             </div>
           </div>
@@ -554,8 +579,12 @@
 
         </div>
 
-      </div> -->
-    </section> <!-- #portfolio
+         -->
+
+      </div>
+    </section> 
+    
+    <!-- #portfolio
 
     <!--==========================
       Clients Section
@@ -667,16 +696,16 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp">
             <div class="member">
-              <img src="img/IMG_20181024_132810.jpg" class="img-fluid" alt="">
+              <img src="#" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Ing. Arnaldo Bonillo</h4>
+                  <h4>Jane Doe</h4>
                   <span>CEO</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/SYSTEMLABS10"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/SYSTEMLABS10"><i class="fa fa-facebook"></i></a>
+                    <!-- <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -685,16 +714,16 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="member">
-              <img src="img/IMG_20181024_133133.jpg" class="img-fluid" alt="">
+              <img src="#" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Ing. Andrés Leotur</h4>
+                  <h4>John Doe</h4>
                   <span>Experto en Backend</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/SYSTEMLABS10"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/SYSTEMLABS10"><i class="fa fa-facebook"></i></a>
+                    <!-- <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -703,16 +732,16 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
-              <img src="img/IMG_20181024_133235.jpg" class="img-fluid" alt="">
+              <img src="#" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Ing. Jesús Guerra </h4>
+                  <h4>Jane Doe </h4>
                   <span>Experto en JS</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/SYSTEMLABS10"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/SYSTEMLABS10"><i class="fa fa-facebook"></i></a>
+                    <!-- <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -721,16 +750,16 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="member">
-              <img src="img/IMG_20181024_140006.jpg" class="img-fluid" alt="">
+              <img src="#" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Ing. Anthony Benitez</h4>
+                  <h4>Jhon Doe</h4>
                   <span>Experto en BD</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/SYSTEMLABS10"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/SYSTEMLABS10"><i class="fa fa-facebook"></i></a>
+                    <!-- <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -767,7 +796,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Teléfono</h3>
-              <p><a href="#">+58 0414-112-44-90</a></p>
+              <p><a href="#">+58 0412-804-31-99</a></p>
               <p><a href="#">+58 0416-302-53-46</a></p>
             </div>
           </div>
@@ -783,25 +812,29 @@
         </div>
 
         <div class="form">
-          <div id="sendmessage">Su mensaje ha sido enviado. Gracias!</div>
+          <div id="sendmessage">Su mensaje ha sido enviado. Gracias por preferirnos!</div>
           <div id="errormessage"></div>
           <form action="" method="post" action="contacto.php" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre y Apellido" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre y Apellido" data-rule="minlen:4" data-msg="Por favor ingrese su nombre y apellido" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor ingrese un email valido" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Teléfono" data-rule="minlen:4" data-msg="Por favor ingrese su número teléfonico" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese un asunto" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Describa su requerimiento o problema" placeholder="Mensaje"></textarea>
               <div class="validation"></div>
             </div>
             <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
@@ -829,7 +862,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Teléfonos</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">+58 0414-112-44-90</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">+58 0412-804-31-99</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">+58 0416-302-53-46</a></li>
              <!--  <li><i class="ion-ios-arrow-right"></i> <a href="#">Servicios</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Terminos de Servicios</a></li>

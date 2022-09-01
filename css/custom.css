@@ -1362,4 +1362,14 @@
 
     }
 
+    #monedas{
+        width:100%;
+        height: auto;
+
+        position: relative;
+        top:-80px;
+        left: 42%;
+        /* margin-left: -100px; */
+    }
+
     
